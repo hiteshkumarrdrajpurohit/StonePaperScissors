@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stone Paper Seassor</title>
+</head>
+<body>
+    <div class="container flex" id="container">
+        <div class="wrapper flex" id="wrapper">
+            <div class="score-board flex">
+                <div class="title">
+                    <ul>
+                        <li>ROCK</li>
+                        <li>PAPER</li>
+                        <li>SCISSORS</li>
+                    </ul>
+                </div>
+                <div class="score-cards flex">
+                    <div class="computer-score card">
+                          <P>COMPUTER </P>
+                          <p>SCORE</p>
+                          <H1 id="computer_score">0</H1>
+                    </div>
+                    <div class="your-score card flex">
+                        <P>YOUR </P>
+                        <p>SCORE</p>
+                        <H1 id="your_score">0</H1>
+                    </div>
+                </div>
+            </div>
+            <div class="gamePanel flex">
+                    <div class="img-box1 flex">
+                        <div class="box1 box flex"  >
+                            <img src="17911 1.png" alt="" class="picture"  id="scissors">
+                        </div>
+                        <div class="box2 box flex" >
+                            <img src="icons8-fist-67 1.png" alt="" class="picture"  id="rock" >
+                        </div>
+                    </div>
+                    <div class="img-box2 flex" >
+                        <div class="box3 box  flex" >
+                            <img src="icons8-hand-64 1.png" alt="" class="picture" id="paper" >
+                        </div>
+                    </div>
+                               
+            </div>
+            <div class="resultPanel flex">
+                <div id="userPick" class="flex">
+                    <h2>You picked</h2>
+                    <img src="" alt="" id="img4" >
+                    
+                </div>
+                <div id="resultBoard" class="flex">
+                    <h1 id="resultStatement"></h1>
+                    <h2>Against PC</h2>
+                    <button id="PlayAgain" >Play Again</button>
+                </div>
+                <div id="computerPick" class="flex">
+                    <h2>PC picked</h2>
+                    <img src="" alt="" id="img5">
+                    
+                </div>
+            </div>
+            
+            <div class="rule-box">
+                <h1>Game Rules</h1>
+                <ul>
+                    <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                    <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                    <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                    <li>If both players lay down the same hand, each player lays down another hand</li>
+                </ul>
+                <div  class='flex' id="X">
+                    <img src="X.png" alt="">
+                </div>
+                
+            </div>
+            <!-- <div class="buttons flex">
+                <button class="rules">RULES</button>
+                <button class="next">NEXT</button>
+            </div> -->
+            
+        </div>
+        <div class="buttons flex">
+            <button class="rules" id="rules">RULES</button>
+            <button class="next" id="next">NEXT</button>
+        </div>
+        <div class="winner flex" id="winner">
+            <div class="cupBoard">
+                <img src="Group 5.png" alt="">
+                <img src="Vector.png" alt="" class="cup">
+            </div>
+            <div class="hurray flex">
+            <h1 style="font-size: 5rem;">HURRAY!!</h1>
+            <P style="font-size: 2.5rem;">You Won The Game</P>
+            </div>
+        </div>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
+ 
